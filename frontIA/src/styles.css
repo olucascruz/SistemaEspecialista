@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #0a0a2a; /* Cor de fundo escura para um tema dark */
+  color: #f8f8f8;; /* Cor do texto, geralmente branca ou uma tonalidade clara para contrastar com o fundo */
+  width: 100%;
+  margin: 0; /* Remover margens padrão do corpo */
+  font-family: Arial, sans-serif;
+}
+
+label{
+  color: #333;
+}
+/* Estilizando inputs do tipo number */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Removendo os spinners no Chrome, Safari e Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Estilizando o campo de número no Safari */
+input[type="number"] {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Estilizando o campo de número no Edge */
+input[type="number"] {
+  -ms-appearence: none;
+}

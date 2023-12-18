@@ -1,0 +1,90 @@
+.mainForm{
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  width: 60rem;
+  margin: 20px auto;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  background-color: #f8f8f8; /* Cor de fundo sutil */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainForm:hover {
+  background-color: #eceaea; /* Cor de fundo alterada ao passar o mouse sobre o botão */
+}
+
+
+.row-dir{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.btSend{
+  width: 30%;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btContainer{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+input[type="number"] {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding: 8px;
+  margin-bottom: 12px;
+  cursor: text;
+  transition: box-shadow 0.3s ease; /* Adicionando uma transição para suavizar o efeito de foco */
+}
+
+/* Efeito de foco */
+input[type="number"]:focus {
+  box-shadow: 0 0 5px #007bff;
+}
+
+h1{
+  text-align: center;
+}
+
+
+.response-container {
+  width: 60rem; /* A largura desejada */
+  height: 200px; /* A altura desejada */
+  background-color: #3498db; /* Cor de fundo do quadrado */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Cor do texto dentro do quadrado */
+  font-family: Arial, sans-serif; /* Fonte do texto */
+}
+
+.response {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}

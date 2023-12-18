@@ -1,0 +1,95 @@
+<h1>QualiÁgua</h1>
+<h2>Sistema baseado em casos de qualidade da água</h2>
+<div class="content" *ngIf="response === null || response === undefined; else outraCoisa">
+  <form #mainForm="ngForm" (ngSubmit)="onSubmit(mainForm)" class="mainForm">
+    <div class="row-dir">
+      <div class="column">
+
+        <label for="aluminum">Alumínio:</label>
+        <input required type="number" id="aluminum" name="aluminum" [(ngModel)]="formData.aluminum">
+
+        <label for="ammonia">Amônia:</label>
+        <input required type="number" id="ammonia" name="ammonia" [(ngModel)]="formData.ammonia">
+
+        <label for="arsenic">Arsênico:</label>
+        <input required type="number" id="arsenic" name="arsenic" [(ngModel)]="formData.arsenic">
+
+        <label for="barium">Bário:</label>
+        <input required type="number" id="barium" name="barium" [(ngModel)]="formData.barium">
+
+        <label for="cadmium">Cádmio:</label>
+        <input required type="number" id="cadmium" name="cadmium" [(ngModel)]="formData.cadmium">
+
+      </div>
+      <div class="column">
+
+        <label for="chloramine">Cloramina:</label>
+        <input required type="number" id="chloramine" name="chloramine" [(ngModel)]="formData.chloramine">
+
+        <label for="chromium">Cromo:</label>
+        <input required type="number" id="chromium" name="chromium" [(ngModel)]="formData.chromium">
+
+        <label for="copper">Cobre:</label>
+        <input required type="number" id="copper" name="copper" [(ngModel)]="formData.copper">
+
+        <label for="fluoride">Fluoreto:</label>
+        <input required type="number" id="fluoride" name="fluoride" [(ngModel)]="formData.fluoride">
+
+        <label for="bacteria">Bactérias:</label>
+        <input required type="number" id="bacteria" name="bacteria" [(ngModel)]="formData.bacteria">
+
+      </div>
+      <div class="column">
+
+        <label for="virus">Vírus:</label>
+        <input required type="number" id="virus" name="virus" [(ngModel)]="formData.virus">
+
+        <label for="lead">Chumbo (Pb):</label>
+        <input required type="number" id="lead" name="lead" [(ngModel)]="formData.lead">
+
+        <label for="nitrates">Nitratos:</label>
+        <input required type="number" id="nitrates" name="nitrates" [(ngModel)]="formData.nitrates">
+
+        <label for="nitrites">Nitritos:</label>
+        <input required type="number" id="nitrites" name="nitrites" [(ngModel)]="formData.nitrites">
+
+        <label for="mercury">Mercúrio:</label>
+        <input required type="number" id="mercury" name="mercury" [(ngModel)]="formData.mercury">
+
+      </div>
+      <div class="column">
+
+        <label for="perchlorate">Perclorato:</label>
+        <input required type="number" id="perchlorate" name="perchlorate" [(ngModel)]="formData.perchlorate">
+
+        <label for="radium">Rádio:</label>
+        <input required type="number" id="radium" name="radium" [(ngModel)]="formData.radium">
+
+        <label for="selenium">Selênio:</label>
+        <input required type="number" id="selenium" name="selenium" [(ngModel)]="formData.selenium">
+
+        <label for="silver">Prata:</label>
+        <input required type="number" id="silver" name="silver" [(ngModel)]="formData.silver">
+
+        <label for="uranium">Urânio:</label>
+        <input required type="number" id="uranium" name="uranium" [(ngModel)]="formData.uranium">
+      </div>
+    </div>
+    <p *ngIf="erro" style="color: red;"><strong>{{erro}}</strong></p>
+    <div class="btContainer">
+      <button class="btSend" type="submit">Enviar</button>
+    </div>
+  </form>
+</div>
+<ng-template #outraCoisa>
+  <div class="response-container">
+  <div class="response">
+    <p>{{ responseString }}</p>
+  </div>
+</div>
+</ng-template>
+
+
+
+
+<router-outlet></router-outlet>
